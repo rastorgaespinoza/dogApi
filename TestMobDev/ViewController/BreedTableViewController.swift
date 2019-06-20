@@ -9,11 +9,12 @@
 import UIKit
 import Moya
 
-class DogTableViewController: UIViewController {
+class BreedTableViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
     let provider = MoyaProvider<DogApi>()
+    
     
     // MARK: - View State
     private var state: State = .loading {
@@ -69,23 +70,16 @@ class DogTableViewController: UIViewController {
             }
         }
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    }
-
 }
 
 // MARK: - UITableView Delegate & Data Source
-extension DogTableViewController: UITableViewDelegate, UITableViewDataSource {
+extension BreedTableViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        
         guard case .ready(let breeds) = state else { return cell }
         
-        
         cell.textLabel?.text = breeds[indexPath.row]
-//        cell.configureWith(items[indexPath.item])
-        
+
         return cell
     }
     
@@ -95,22 +89,17 @@ extension DogTableViewController: UITableViewDelegate, UITableViewDataSource {
         return breeds.count
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
         
-//        guard case .ready(let breeds) = state else { return }
+        guard case .ready(let breeds) = state else { return }
         
-//        let comicVC = CardViewController.instantiate(comic: items[indexPath.item])
-//        navigationController?.pushViewController(comicVC, animated: true)
+        let comicVC = BreedDetailViewController.instantiate(breedName: breeds[indexPath.item])
+        navigationController?.pushViewController(comicVC, animated: true)
     }
 }
 
-
-extension DogTableViewController {
+extension BreedTableViewController {
     enum State {
         case loading
         case ready([String])

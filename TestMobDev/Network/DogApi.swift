@@ -12,9 +12,6 @@ import Moya
 let breed_name = "BREED_NAME"
 
 public enum DogApi {
-//    static private let privateKey = "YOUR PRIVATE KEY"
-//    static private let publicKey = "YOUR PUBLIC KEY"
-    
     case dogBreedList
     case dogBreedDetail
 }

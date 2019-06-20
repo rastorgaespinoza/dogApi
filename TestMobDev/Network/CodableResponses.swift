@@ -12,19 +12,3 @@ struct DogApiResponse<T: Codable>: Codable {
     let status: String
     let message: [T]
 }
-
-//struct DogApiResults<T: Codable>: Codable {
-//    let Breed: [T]
-//}
-
-//struct DogApiResponse<T: Codable>: Codable {
-//    let message: DogApiResults<T>
-//}
-//
-//struct DogApiResults<T: Codable>: Codable {
-//    let results: [T]
-//}
-
-//struct ImgurResponse<T: Codable>: Codable {
-//    let data: T
-//}

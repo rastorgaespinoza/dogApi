@@ -13,7 +13,7 @@
         <!--Breed List-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="DogTableViewController" customModule="TestMobDev" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BreedTableViewController" id="BYZ-38-t0r" customClass="BreedTableViewController" customModule="TestMobDev" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,9 +38,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="FpI-jG-lE6" kind="show" id="9le-NB-Uwl"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -61,20 +58,22 @@
                     <navigationItem key="navigationItem" title="Breed List" id="Y6i-cU-I0E"/>
                     <connections>
                         <outlet property="tableView" destination="47p-fV-Ibn" id="xcN-x7-hfJ"/>
+                        <segue destination="FpI-jG-lE6" kind="show" identifier="ShowDetailBreed" id="J9x-Lm-ZXN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="875" y="759"/>
         </scene>
-        <!--View Controller-->
+        <!--Breed Detail View Controller-->
         <scene sceneID="YNC-JE-85q">
             <objects>
-                <viewController id="FpI-jG-lE6" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BreedDetailViewController" id="FpI-jG-lE6" customClass="BreedDetailViewController" customModule="TestMobDev" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gzj-hY-FEF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="syO-m5-3nD"/>
                     </view>
                 </viewController>
@@ -90,6 +89,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="NhP-zF-ocl">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
