@@ -3,17 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0A69AA300CC95B1DDB3CED92 /* Pods_TestMobDevUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6D0D98892B12FBF0BF143A /* Pods_TestMobDevUITests.framework */; };
 		930530A222BAF97500A566FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930530A122BAF97500A566FC /* AppDelegate.swift */; };
-		930530A422BAF97500A566FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930530A322BAF97500A566FC /* ViewController.swift */; };
 		930530A722BAF97500A566FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 930530A522BAF97500A566FC /* Main.storyboard */; };
 		930530A922BAF97700A566FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 930530A822BAF97700A566FC /* Assets.xcassets */; };
 		930530AC22BAF97700A566FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 930530AA22BAF97700A566FC /* LaunchScreen.storyboard */; };
 		930530B722BAF97700A566FC /* TestMobDevUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930530B622BAF97700A566FC /* TestMobDevUITests.swift */; };
+		9375ECB022BAFF2800C78031 /* DogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9375ECAF22BAFF2800C78031 /* DogTableViewController.swift */; };
+		9375ECB322BB015A00C78031 /* DogApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9375ECB222BB015A00C78031 /* DogApi.swift */; };
+		9375ECB622BB020E00C78031 /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9375ECB522BB020E00C78031 /* String+MD5.swift */; };
+		9375ECB822BB024B00C78031 /* Date+ISO8601.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9375ECB722BB024B00C78031 /* Date+ISO8601.swift */; };
+		9375ECBA22BB026800C78031 /* Dictionary+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9375ECB922BB026800C78031 /* Dictionary+Ext.swift */; };
+		9375ECBC22BB02A400C78031 /* CodableResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9375ECBB22BB02A400C78031 /* CodableResponses.swift */; };
+		9375ECBF22BB0E2F00C78031 /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9375ECBE22BB0E2F00C78031 /* Breed.swift */; };
 		B792DC465B90044990B67D01 /* Pods_TestMobDev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48BF67F76D077D9B785A88A /* Pods_TestMobDev.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +38,6 @@
 		7602B6105796FB5FA3972BD4 /* Pods-TestMobDev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestMobDev.debug.xcconfig"; path = "Target Support Files/Pods-TestMobDev/Pods-TestMobDev.debug.xcconfig"; sourceTree = "<group>"; };
 		9305309E22BAF97500A566FC /* TestMobDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestMobDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		930530A122BAF97500A566FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		930530A322BAF97500A566FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		930530A622BAF97500A566FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		930530A822BAF97700A566FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		930530AB22BAF97700A566FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +45,14 @@
 		930530B222BAF97700A566FC /* TestMobDevUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestMobDevUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		930530B622BAF97700A566FC /* TestMobDevUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMobDevUITests.swift; sourceTree = "<group>"; };
 		930530B822BAF97700A566FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9375ECAF22BAFF2800C78031 /* DogTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogTableViewController.swift; sourceTree = "<group>"; };
+		9375ECB222BB015A00C78031 /* DogApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogApi.swift; sourceTree = "<group>"; };
+		9375ECB522BB020E00C78031 /* String+MD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+MD5.swift"; sourceTree = "<group>"; };
+		9375ECB722BB024B00C78031 /* Date+ISO8601.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ISO8601.swift"; sourceTree = "<group>"; };
+		9375ECB922BB026800C78031 /* Dictionary+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Ext.swift"; sourceTree = "<group>"; };
+		9375ECBB22BB02A400C78031 /* CodableResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableResponses.swift; sourceTree = "<group>"; };
+		9375ECBE22BB0E2F00C78031 /* Breed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breed.swift; sourceTree = "<group>"; };
+		9375ECC122BB192F00C78031 /* TestMobDev-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestMobDev-Bridging-Header.h"; sourceTree = "<group>"; };
 		9C6D0D98892B12FBF0BF143A /* Pods_TestMobDevUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestMobDevUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA6595AB33E848B27A61B8A5 /* Pods-TestMobDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestMobDev.release.xcconfig"; path = "Target Support Files/Pods-TestMobDev/Pods-TestMobDev.release.xcconfig"; sourceTree = "<group>"; };
 		B48BF67F76D077D9B785A88A /* Pods_TestMobDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestMobDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,7 +87,6 @@
 				C6CF943828EE30EB3EF1A110 /* Pods-TestMobDevUITests.debug.xcconfig */,
 				61D2B5FFAD615FA54EA12189 /* Pods-TestMobDevUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -101,8 +113,12 @@
 		930530A022BAF97500A566FC /* TestMobDev */ = {
 			isa = PBXGroup;
 			children = (
+				9375ECC022BB191800C78031 /* Common */,
+				9375ECBD22BB04AD00C78031 /* Model */,
+				9375ECB422BB01D400C78031 /* Helpers */,
+				9375ECB122BB014000C78031 /* Network */,
+				9375ECAE22BAFF0A00C78031 /* ViewController */,
 				930530A122BAF97500A566FC /* AppDelegate.swift */,
-				930530A322BAF97500A566FC /* ViewController.swift */,
 				930530A522BAF97500A566FC /* Main.storyboard */,
 				930530A822BAF97700A566FC /* Assets.xcassets */,
 				930530AA22BAF97700A566FC /* LaunchScreen.storyboard */,
@@ -118,6 +134,49 @@
 				930530B822BAF97700A566FC /* Info.plist */,
 			);
 			path = TestMobDevUITests;
+			sourceTree = "<group>";
+		};
+		9375ECAE22BAFF0A00C78031 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9375ECAF22BAFF2800C78031 /* DogTableViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9375ECB122BB014000C78031 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9375ECB222BB015A00C78031 /* DogApi.swift */,
+				9375ECBB22BB02A400C78031 /* CodableResponses.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9375ECB422BB01D400C78031 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9375ECB522BB020E00C78031 /* String+MD5.swift */,
+				9375ECB722BB024B00C78031 /* Date+ISO8601.swift */,
+				9375ECB922BB026800C78031 /* Dictionary+Ext.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9375ECBD22BB04AD00C78031 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9375ECBE22BB0E2F00C78031 /* Breed.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9375ECC022BB191800C78031 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9375ECC122BB192F00C78031 /* TestMobDev-Bridging-Header.h */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		9E9FF6892E196A6EB4F6F6BF /* Frameworks */ = {
@@ -182,6 +241,7 @@
 				TargetAttributes = {
 					9305309D22BAF97500A566FC = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					930530B122BAF97700A566FC = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -297,8 +357,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				930530A422BAF97500A566FC /* ViewController.swift in Sources */,
+				9375ECBC22BB02A400C78031 /* CodableResponses.swift in Sources */,
+				9375ECB322BB015A00C78031 /* DogApi.swift in Sources */,
+				9375ECBA22BB026800C78031 /* Dictionary+Ext.swift in Sources */,
+				9375ECB022BAFF2800C78031 /* DogTableViewController.swift in Sources */,
 				930530A222BAF97500A566FC /* AppDelegate.swift in Sources */,
+				9375ECB822BB024B00C78031 /* Date+ISO8601.swift in Sources */,
+				9375ECBF22BB0E2F00C78031 /* Breed.swift in Sources */,
+				9375ECB622BB020E00C78031 /* String+MD5.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +527,7 @@
 			baseConfigurationReference = 7602B6105796FB5FA3972BD4 /* Pods-TestMobDev.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MWN22WZZ3Z;
 				INFOPLIST_FILE = TestMobDev/Info.plist;
@@ -470,6 +537,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rastorga.dogApi.TestMobDev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestMobDev/Common/TestMobDev-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -480,6 +549,7 @@
 			baseConfigurationReference = AA6595AB33E848B27A61B8A5 /* Pods-TestMobDev.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MWN22WZZ3Z;
 				INFOPLIST_FILE = TestMobDev/Info.plist;
@@ -489,6 +559,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rastorga.dogApi.TestMobDev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestMobDev/Common/TestMobDev-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
