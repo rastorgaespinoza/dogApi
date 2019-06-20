@@ -9,11 +9,9 @@
 import Foundation
 import Moya
 
-let breed_name = "BREED_NAME"
-
 public enum DogApi {
     case dogBreedList
-    case dogBreedDetail
+    case dogBreedDetail(String)
 }
 
 extension DogApi: TargetType {
@@ -24,15 +22,12 @@ extension DogApi: TargetType {
     public var path: String {
         switch self {
         case .dogBreedList: return "/breeds/list"
-        case .dogBreedDetail: return "/breed/{\(breed_name)}/images"
+        case .dogBreedDetail(let breedName): return "/breed/\(breedName)/images"
         }
     }
     
     public var method: Moya.Method {
-        switch self {
-        case .dogBreedList: return .get
-        case .dogBreedDetail: return .get
-        }
+        return .get
     }
     
     public var sampleData: Data {
@@ -49,5 +44,11 @@ extension DogApi: TargetType {
     
     public var validationType: ValidationType {
         return .successCodes
+    }
+}
+
+private extension String {
+    var urlEscaped: String {
+        return self.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!
     }
 }

@@ -6,7 +6,8 @@ target 'TestMobDev' do
   use_frameworks!
 
   # Pods for TestMobDev
-pod 'Moya', '~> 13.0'
+   pod 'Moya', '~> 13.0'
+   pod 'SDWebImage', '~> 5.0'
   target 'TestMobDevUITests' do
     inherit! :search_paths
     # Pods for testing
