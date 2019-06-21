@@ -86,22 +86,16 @@ extension BreedDetailViewController: UICollectionViewDataSource, UICollectionVie
         guard !breedImages[indexPath.row].isEmpty, let url = URL(string: breedImages[indexPath.row]) else {
             return UICollectionViewCell()
         }
-        let imageView = UIImageView(frame: .init(x: 0, y: 0, width: 100, height: 100))
-        imageView.contentMode = .scaleAspectFit
-        cell.contentView.addSubview(imageView)
-        imageView.topAnchor.constraint(equalTo: cell.topAnchor).isActive = true
-        imageView.bottomAnchor.constraint(equalTo: cell.bottomAnchor).isActive = true
-        imageView.leadingAnchor.constraint(equalTo: cell.leadingAnchor).isActive = true
-        imageView.trailingAnchor.constraint(equalTo: cell.trailingAnchor).isActive = true
-        
-        imageView.sd_setImage(with: url, placeholderImage: nil)
+        let imageView = cell.viewWithTag(100) as! UIImageView
+
+        imageView.sd_setImage(with: url, placeholderImage: #imageLiteral(resourceName: "placeholder"), options: [.scaleDownLargeImages], context: nil)
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return .init(width: self.view.frame.width / 2, height: 100)
+        let width = self.view.frame.width / 3 - 1
+        return .init(width: width, height: width)
     }
-    
 }
 
 //MARK: - Helper
