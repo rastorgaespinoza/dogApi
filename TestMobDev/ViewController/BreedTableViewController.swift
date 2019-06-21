@@ -12,6 +12,7 @@ import Moya
 class BreedTableViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     let provider = MoyaProvider<DogApi>()
     
@@ -23,24 +24,13 @@ class BreedTableViewController: UIViewController {
             case .ready:
                 print("ready")
                 tableView.reloadData()
-//                viewMessage.isHidden = true
-//                tblComics.isHidden = false
-//                tblComics.reloadData()
+                activityIndicator.stopAnimating()
             case .loading:
                 print("loading")
-//                tblComics.isHidden = true
-//                viewMessage.isHidden = false
-//                lblMessage.text = "Getting comics ..."
-//                imgMeessage.image = #imageLiteral(resourceName: "Loading")
+                activityIndicator.startAnimating()
             case .error:
                 print("error")
-//                tblComics.isHidden = true
-//                viewMessage.isHidden = false
-//                lblMessage.text = """
-//                Something went wrong!
-//                Try again later.
-//                """
-//                imgMeessage.image = #imageLiteral(resourceName: "Error")
+                activityIndicator.stopAnimating()
             }
         }
     }

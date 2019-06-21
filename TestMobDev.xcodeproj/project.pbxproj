@@ -15,11 +15,7 @@
 		930530B722BAF97700A566FC /* TestMobDevUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930530B622BAF97700A566FC /* TestMobDevUITests.swift */; };
 		9375ECB022BAFF2800C78031 /* BreedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9375ECAF22BAFF2800C78031 /* BreedTableViewController.swift */; };
 		9375ECB322BB015A00C78031 /* DogApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9375ECB222BB015A00C78031 /* DogApi.swift */; };
-		9375ECB622BB020E00C78031 /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9375ECB522BB020E00C78031 /* String+MD5.swift */; };
-		9375ECB822BB024B00C78031 /* Date+ISO8601.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9375ECB722BB024B00C78031 /* Date+ISO8601.swift */; };
-		9375ECBA22BB026800C78031 /* Dictionary+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9375ECB922BB026800C78031 /* Dictionary+Ext.swift */; };
 		9375ECBC22BB02A400C78031 /* CodableResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9375ECBB22BB02A400C78031 /* CodableResponses.swift */; };
-		9375ECBF22BB0E2F00C78031 /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9375ECBE22BB0E2F00C78031 /* Breed.swift */; };
 		9375ECC522BB29AF00C78031 /* BreedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9375ECC422BB29AF00C78031 /* BreedDetailViewController.swift */; };
 		B792DC465B90044990B67D01 /* Pods_TestMobDev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48BF67F76D077D9B785A88A /* Pods_TestMobDev.framework */; };
 /* End PBXBuildFile section */
@@ -48,11 +44,7 @@
 		930530B822BAF97700A566FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9375ECAF22BAFF2800C78031 /* BreedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedTableViewController.swift; sourceTree = "<group>"; };
 		9375ECB222BB015A00C78031 /* DogApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogApi.swift; sourceTree = "<group>"; };
-		9375ECB522BB020E00C78031 /* String+MD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+MD5.swift"; sourceTree = "<group>"; };
-		9375ECB722BB024B00C78031 /* Date+ISO8601.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ISO8601.swift"; sourceTree = "<group>"; };
-		9375ECB922BB026800C78031 /* Dictionary+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Ext.swift"; sourceTree = "<group>"; };
 		9375ECBB22BB02A400C78031 /* CodableResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableResponses.swift; sourceTree = "<group>"; };
-		9375ECBE22BB0E2F00C78031 /* Breed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breed.swift; sourceTree = "<group>"; };
 		9375ECC122BB192F00C78031 /* TestMobDev-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestMobDev-Bridging-Header.h"; sourceTree = "<group>"; };
 		9375ECC422BB29AF00C78031 /* BreedDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedDetailViewController.swift; sourceTree = "<group>"; };
 		9C6D0D98892B12FBF0BF143A /* Pods_TestMobDevUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestMobDevUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,8 +109,6 @@
 			children = (
 				930530AD22BAF97700A566FC /* Info.plist */,
 				9375ECC022BB191800C78031 /* Common */,
-				9375ECBD22BB04AD00C78031 /* Model */,
-				9375ECB422BB01D400C78031 /* Helpers */,
 				9375ECB122BB014000C78031 /* Network */,
 				9375ECAE22BAFF0A00C78031 /* ViewController */,
 			);
@@ -150,24 +140,6 @@
 				9375ECBB22BB02A400C78031 /* CodableResponses.swift */,
 			);
 			path = Network;
-			sourceTree = "<group>";
-		};
-		9375ECB422BB01D400C78031 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				9375ECB522BB020E00C78031 /* String+MD5.swift */,
-				9375ECB722BB024B00C78031 /* Date+ISO8601.swift */,
-				9375ECB922BB026800C78031 /* Dictionary+Ext.swift */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
-		9375ECBD22BB04AD00C78031 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				9375ECBE22BB0E2F00C78031 /* Breed.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		9375ECC022BB191800C78031 /* Common */ = {
@@ -362,13 +334,9 @@
 			files = (
 				9375ECBC22BB02A400C78031 /* CodableResponses.swift in Sources */,
 				9375ECB322BB015A00C78031 /* DogApi.swift in Sources */,
-				9375ECBA22BB026800C78031 /* Dictionary+Ext.swift in Sources */,
 				9375ECB022BAFF2800C78031 /* BreedTableViewController.swift in Sources */,
 				9375ECC522BB29AF00C78031 /* BreedDetailViewController.swift in Sources */,
 				930530A222BAF97500A566FC /* AppDelegate.swift in Sources */,
-				9375ECB822BB024B00C78031 /* Date+ISO8601.swift in Sources */,
-				9375ECBF22BB0E2F00C78031 /* Breed.swift in Sources */,
-				9375ECB622BB020E00C78031 /* String+MD5.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

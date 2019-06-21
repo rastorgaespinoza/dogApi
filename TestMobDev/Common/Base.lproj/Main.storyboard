@@ -45,10 +45,15 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Yng-8R-vhV"/>
                                 </connections>
                             </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="5Z7-nx-xl3">
+                                <rect key="frame" x="197" y="491" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="5Z7-nx-xl3" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="05T-L2-CaJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="47p-fV-Ibn" secondAttribute="bottom" id="6UH-on-put"/>
+                            <constraint firstItem="5Z7-nx-xl3" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Iq6-dO-gZ0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="47p-fV-Ibn" secondAttribute="trailing" id="W9d-p2-wAZ"/>
                             <constraint firstItem="47p-fV-Ibn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Y08-H4-14b"/>
                             <constraint firstItem="47p-fV-Ibn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gbB-AA-uYN"/>
@@ -57,6 +62,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Breed List" id="Y6i-cU-I0E"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="5Z7-nx-xl3" id="Grh-Xz-hqT"/>
                         <outlet property="tableView" destination="47p-fV-Ibn" id="xcN-x7-hfJ"/>
                         <segue destination="FpI-jG-lE6" kind="show" identifier="ShowDetailBreed" id="J9x-Lm-ZXN"/>
                     </connections>
@@ -108,18 +114,24 @@
                                     <outlet property="delegate" destination="FpI-jG-lE6" id="Jxv-9d-SN4"/>
                                 </connections>
                             </collectionView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="8O6-vB-l4K">
+                                <rect key="frame" x="197" y="491" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="syO-m5-3nD" firstAttribute="trailing" secondItem="FSY-D9-iqF" secondAttribute="trailing" id="Bvv-U4-fgT"/>
                             <constraint firstItem="syO-m5-3nD" firstAttribute="bottom" secondItem="FSY-D9-iqF" secondAttribute="bottom" id="Ghk-7t-QLr"/>
+                            <constraint firstItem="8O6-vB-l4K" firstAttribute="centerX" secondItem="syO-m5-3nD" secondAttribute="centerX" id="NJw-JF-c14"/>
+                            <constraint firstItem="8O6-vB-l4K" firstAttribute="centerY" secondItem="syO-m5-3nD" secondAttribute="centerY" id="TYS-TO-RoS"/>
                             <constraint firstItem="FSY-D9-iqF" firstAttribute="top" secondItem="syO-m5-3nD" secondAttribute="top" id="fD6-A4-BZN"/>
                             <constraint firstItem="FSY-D9-iqF" firstAttribute="leading" secondItem="syO-m5-3nD" secondAttribute="leading" id="pNP-GV-esd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="syO-m5-3nD"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="8O6-vB-l4K" id="XKC-nh-oK8"/>
                         <outlet property="collectionView" destination="FSY-D9-iqF" id="aJc-zz-vqj"/>
                     </connections>
                 </viewController>

@@ -13,6 +13,7 @@ import SDWebImage
 class BreedDetailViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     private var breedName: String?
 
@@ -25,11 +26,14 @@ class BreedDetailViewController: UIViewController {
             switch state {
             case .ready:
                 print("ready")
+                activityIndicator.stopAnimating()
                 collectionView.reloadData()
             case .loading:
                 print("loading")
+                activityIndicator.startAnimating()
             case .error:
                 print("error")
+                activityIndicator.stopAnimating()
             }
         }
     }
